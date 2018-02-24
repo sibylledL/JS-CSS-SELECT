@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Almendra+Display" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style_select.css">
+<title></title>
+</head>
+<body>
+
+
+<div class="guess">
+
+<p> Guess the color of the box !</p>
+
+  <select id="Zdd_1">
+      <option value="red">Aquamarine</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+  </select>
+
+
+
+<script>
+var dropdown = document.getElementById("Zdd_1");
+dropdown.onchange = function(event){
+    if(dropdown.value=="blue"){
+        var x = document.createElement("DIV");
+    var t = document.createTextNode("Not in my opinion");
+    x.setAttribute("style", "background-color: rgb(204, 242, 255);width:150px; height:150px; margin:0 0 0 550px;text-align:center;");
+    x.appendChild(t)
+    document.body.appendChild(x);;
+  }else if(dropdown.value=="green"){
+      var x = document.createElement("DIV");
+  var t = document.createTextNode("Yes! in my opinion...");
+  x.setAttribute("style", "background-color:rgb(51, 153, 102) ;width:150px; height:150px; margin:-50px 0 0 400px;text-align:center;");
+  x.appendChild(t)
+  document.body.appendChild(x);;
+}else{
+  var x = document.createElement("DIV");
+var t = document.createTextNode("no, no, no...");
+x.setAttribute("style", "background-color:red ;width:150px; height:150px; margin:0 0 0 700px;text-align:center;");
+x.appendChild(t)
+document.body.appendChild(x);;
+}
+}
+</script>
+</body>
+</html>

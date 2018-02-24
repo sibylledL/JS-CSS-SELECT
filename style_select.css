@@ -1,0 +1,13 @@
+.guess{
+
+height: 200px;
+width: 400px;
+background-color: #006666;
+text-align: center;
+color: white;
+align-items: center;
+padding-top: 50px;
+font-family: 'Almendra Display', cursive;
+font-size: 20px;
+font-weight: bold;
+}
